@@ -1,0 +1,312 @@
+:root{
+	--color-uno:#f4121c;
+	--color-dos:#000;
+	--color-tres:#fff;
+	--color-cuatro: rgba(0, 0, 0, 0.75);
+	--color-cinco: rgba(0,0,0, 0.4);
+}
+
+@font-face{
+	font-family: "titulo";
+	src: url(../SourceSansPro1/SourceSansPro-Black.ttf);
+}
+
+@font-face{
+	font-family: "parrafo";
+	src: url(../SourceSansPro1/SourceSansPro-Regular.ttf);
+}
+
+@font-face{
+	font-family: "menu";
+	src: url(../SourceSansPro1/SourceSansPro-Light.ttf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	background-color: #f4121c;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 0px;
+}
+
+header figure{
+	width: 100px;
+	height: 100px;
+}
+
+header figure img{
+	width: 80%;
+	margin: 10%;
+}
+
+header nav ul{
+	display: flex;
+}
+
+header nav ul li{
+	width: 140px;
+	margin: 0px 5px;
+	list-style: none;
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+header nav ul li a{
+	color: var(--color-tres);
+	text-decoration: none;
+	font-family: "menu", sans-serif;
+}
+
+header nav ul li a:hover,
+.activo{
+	border-bottom: 3px solid var(--color-tres);
+}
+
+.carrusel{
+	width: 95%;
+	/*height: 400px;*/
+	height: 100%;
+	margin: 30px auto;
+	background-color: var(--color-cinco);
+	position: relative;
+}
+
+.carrusel figure img{
+	width: 100%;
+	display: block;
+}
+
+.carrusel div{
+	position: absolute;
+	top: 200;
+	/*align-content: center;
+	/*height: 200px;*/
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5px 0px;
+}
+
+.carrusel div button{
+	border: 1px solid var(--color-tres);
+}
+
+.vision{
+	padding: 60px 20px;
+	font-size: 2.5rem;
+	width: 95%;
+	margin: 30px auto;
+}
+
+.vision h2{
+	text-align: center;
+	margin: 20px 0px;
+	font-family: "titulo", sans-serif;
+}
+
+.vision div{
+	text-align: center;
+	padding: 30px 0px;
+	font-family: "parrafo", sans-serif;
+}
+
+.vision div ul{
+	width: 50%;
+	margin: 0px auto;
+	padding: 20px 7%;
+}
+
+.vision div ul li{
+	text-align: left;
+}
+
+.vision div blockquote{
+	font-size: 1.2rem;
+	margin: 20px 0px;
+
+}
+
+.servicio{
+	width: 95%;
+	margin: 30px auto;
+	color: var(--color-dos);
+	padding: 60px 0px;
+}
+
+.servicio ul{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: space-evenly;
+	
+}
+
+.servicio ul li{
+	list-style: none;
+	height: 530px;
+	width: 350px;
+	background-color: var(--color-cinco);
+}
+
+.servicio ul li figure{
+	width: 350px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.servicio ul li figure img:hover{
+	width: 370px;
+}
+
+.servicio ul li div{
+	margin: 20px;
+}
+
+.servicio ul li div h2{
+	font-family: "titulo", sans-serif;
+	color: var(--color-tres);
+}
+
+.servicio ul li div p{
+	font-family: "menu", sans-serif;
+	margin: 20px 0px;
+	color: var(--color-tres);
+}
+
+.servicio ul li div a,
+.idioma div a{
+	padding: 5px 10px;
+	border-radius: 15px;
+	background-color: var(--color-uno);
+	color: var(--color-tres);
+	margin: 5px 0px;
+	text-decoration: none;
+}
+
+.servicio ul li div a:hover,
+.idioma div a:hover{
+	background-color: var(--color-cinco);
+}
+
+.idioma{
+	width: 95%;
+	margin: 30px auto;
+	padding: 80px 0px;
+	background-color: var(--color-cinco);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.idioma figure{
+	width: 400px;
+	height: 400px;
+}
+
+.idioma div{
+	width: 400px;
+}
+
+.idioma div h2{
+	color: var(--color-tres);
+	margin: 20px 0px;
+	font-size: 2rem;
+	font-family: "titulo", sans-serif;
+}
+
+.idioma div p{
+	margin: 10px 0px;
+	font-family: "menu", sans-serif;
+	font-size: 1.2rem;
+	color: var(--color-tres);
+}
+
+.exito{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 95%;
+	margin: 30px auto;
+	background-color: var(--color-uno);
+	padding: 50px 0px;
+}
+
+.exito h2{
+	font-size: 3rem;
+	font-family: "titulo";
+	align-content: center;
+	color: var(--color-tres);
+}
+
+.exito video{
+	width: 400px;
+	padding: 100px 0px;
+}
+
+.certifica{
+	width: 95%;
+	margin: 30px auto;
+	padding: 100px 0px;
+}
+
+.certifica h2{
+	font-size: 3rem;
+	font-family: "titulo", sans-serif;
+	text-align: center;
+	padding: 50px 0px;
+}
+
+.certifica ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 1rem;
+}
+
+.certifica ul li{
+	list-style: none;
+	width: 300px;
+}
+
+.certifica ul li img{
+	width: 100%;
+}
+
+footer{
+	background-color: var(--color-dos);
+	color: var(--color-tres);
+	display: flex;
+	justify-content: space-around;
+	padding: 60px 0px;
+}
+
+footer img{
+	width: 100px;
+	height: 100px;
+}
+
+footer ul li{
+	display: flex;
+}
+
+footer ul li h2{
+	font-family: "titulo", sans-serif;
+	padding: 10px;
+}
+
+footer ul li p{
+	padding: 10px;
+	font-family: "menu", sans-serif;
+}
+
+footer ul li img{
+	width: 32px;
+	height: 32px;
+}
