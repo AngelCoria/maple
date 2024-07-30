@@ -3,7 +3,8 @@
 	--color-dos:#000;
 	--color-tres:#fff;
 	--color-cuatro: rgba(0, 0, 0, 0.75);
-	--color-cinco: rgba(0,0,0, 0.4);
+	--color-cinco: rgba(0,0,0, 0.40);
+	--color-seis: rgba(0,0,0, 10%);
 }
 
 @font-face{
@@ -74,7 +75,7 @@ header nav ul li a:hover,
 	/*height: 400px;*/
 	height: 100%;
 	margin: 30px auto;
-	background-color: var(--color-cinco);
+	background-color: var(--color-seis);
 	position: relative;
 }
 
@@ -86,16 +87,16 @@ header nav ul li a:hover,
 .carrusel div{
 	position: absolute;
 	top: 200;
-	/*align-content: center;
-	/*height: 200px;*/
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	padding: 5px 0px;
+	background-color: var(--color-tres);
 }
 
 .carrusel div button{
 	border: 1px solid var(--color-tres);
+	background-color: var(--color-tres);
 }
 
 .vision{
@@ -133,6 +134,25 @@ header nav ul li a:hover,
 
 }
 
+.vision div table{
+	width: 600px;
+	margin: 0px auto;
+}
+
+.vision div table thead{
+	background-color: var(--color-uno);
+	color: var(--color-tres);
+}
+
+.vision div table tbody{
+	background-color: var(--color-seis);
+}
+
+.pago{
+	font-family: "menu", sans-serif;
+	font-size: 1.5rem;
+}
+
 .servicio{
 	width: 95%;
 	margin: 30px auto;
@@ -152,17 +172,18 @@ header nav ul li a:hover,
 	list-style: none;
 	height: 530px;
 	width: 350px;
-	background-color: var(--color-cinco);
+	background-color: var(--color-seis);
+	border: 1px solid var(--color-uno);
 }
 
 .servicio ul li figure{
-	width: 350px;
+	width: 100%;
 	height: 200px;
 	overflow: hidden;
 }
 
-.servicio ul li figure img:hover{
-	width: 370px;
+.servicio ul li figure img{
+	width: 355px;
 }
 
 .servicio ul li div{
@@ -171,13 +192,13 @@ header nav ul li a:hover,
 
 .servicio ul li div h2{
 	font-family: "titulo", sans-serif;
-	color: var(--color-tres);
+	color: var(--color-dos);
 }
 
 .servicio ul li div p{
 	font-family: "menu", sans-serif;
 	margin: 20px 0px;
-	color: var(--color-tres);
+	color: var(--color-dos);
 }
 
 .servicio ul li div a,
@@ -199,7 +220,7 @@ header nav ul li a:hover,
 	width: 95%;
 	margin: 30px auto;
 	padding: 80px 0px;
-	background-color: var(--color-cinco);
+	background-color: var(--color-seis);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -215,7 +236,7 @@ header nav ul li a:hover,
 }
 
 .idioma div h2{
-	color: var(--color-tres);
+	color: var(--color-dos);
 	margin: 20px 0px;
 	font-size: 2rem;
 	font-family: "titulo", sans-serif;
@@ -225,7 +246,7 @@ header nav ul li a:hover,
 	margin: 10px 0px;
 	font-family: "menu", sans-serif;
 	font-size: 1.2rem;
-	color: var(--color-tres);
+	color: var(--color-dos);
 }
 
 .exito{
@@ -284,7 +305,7 @@ footer{
 	color: var(--color-tres);
 	display: flex;
 	justify-content: space-around;
-	padding: 60px 0px;
+	padding: 150px 0px;
 }
 
 footer img{
